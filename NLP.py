@@ -1,9 +1,5 @@
 from textblob import TextBlob
 import spacy
-import sputnik
-import spacy.about
-
-package = sputnik.install('spacy', spacy.about.__version__, spacy.about.__default_model__)
 
 nlp = spacy.load('en')
 
