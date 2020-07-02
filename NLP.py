@@ -1,7 +1,7 @@
 from textblob import TextBlob
 import spacy
 
-nlp = spacy.load('en')
+nlp = spacy.load('en_core_web_sm')
 
 # Methods
 def get_tokens(text):
@@ -32,3 +32,5 @@ def get_sentiment(text):
     pol = round(new_text.sentiment.polarity, 2)
     result = '\nSubjectivity:{}, Polarity:{}'.format(sub, pol)
     return result
+
+print(get_sentiment('This is a sample. Looks good..'))
