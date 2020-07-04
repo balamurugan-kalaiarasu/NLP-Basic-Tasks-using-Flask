@@ -1,4 +1,4 @@
-# NLP-Basic-Tasks
+# NLP Basic Tasks - using Flask
 ![lang](https://img.shields.io/badge/python-v3.7-blue)
 ![lang](https://img.shields.io/badge/Tech-Flask%2C%20Textblob%2C%20Spacy%2C%20Vader-green)
 
