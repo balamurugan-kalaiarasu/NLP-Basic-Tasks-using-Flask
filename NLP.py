@@ -46,4 +46,4 @@ def get_vader_sentiment(text):
     final_result = '\nTextBlob Sentiment:' + textblob_sentiment + '\n\nVader Sentiment:' + result
     return final_result
 
-print(get_vader_sentiment('The intent behind the movie was great, but it could have been better'))
+#print(get_vader_sentiment('The intent behind the movie was great, but it could have been better'))
