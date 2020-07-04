@@ -2,7 +2,7 @@ Flask==1.1.2
 gunicorn==19.9.0
 textblob==0.15.3
 https://github.com/sloria/TextBlob/tarball/master
-spacy==2.0.13
+spacy==2.1.0
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.1.0/en_core_web_sm-2.1.0.tar.gz
 nltk==3.4.5
 vaderSentiment==3.3.2
