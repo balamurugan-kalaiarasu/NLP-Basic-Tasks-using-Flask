@@ -17,7 +17,7 @@ def test():
         result = NLP.get_pos_tags(text)
         return render_template('index.html', result_text = result)
     if 'sen' in request.form:
-        result = NLP.get_sentiment(text)
+        result = NLP.get_vader_sentiment(text)
         return render_template('index.html', result_text = result)
     if 'ent' in request.form:
         result = NLP.get_entities(text)

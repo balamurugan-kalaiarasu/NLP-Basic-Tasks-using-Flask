@@ -1,5 +1,6 @@
 from textblob import TextBlob
 import spacy
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 nlp = spacy.load('en_core_web_sm')
 
@@ -30,7 +31,19 @@ def get_sentiment(text):
     new_text = TextBlob(raw_text)
     sub = round(new_text.sentiment.subjectivity, 2)
     pol = round(new_text.sentiment.polarity, 2)
-    result = '\nSubjectivity:{}, Polarity:{}'.format(sub, pol)
+    result = '\nSubjectivity: {}, \nPolarity: {}'.format(sub, pol)
     return result
 
-print(get_sentiment('This is a sample. Looks good..'))
+def get_vader_sentiment(text):
+    raw_text = str(text)
+    analyser = SentimentIntensityAnalyzer()
+    score = analyser.polarity_scores(raw_text)
+    result = '\nPositive: {}, \nNegativity: {}, \nNeutral: {}, \nCompound: {}'.format(round(score['pos'], 2), 
+                                                                                 round(score['neg'], 2),
+                                                                                 round(score['neu'], 2),
+                                                                                 round(score['compound'], 2))
+    textblob_sentiment = get_sentiment(text)
+    final_result = '\nTextBlob Sentiment:' + textblob_sentiment + '\n\nVader Sentiment:' + result
+    return final_result
+
+print(get_vader_sentiment('The intent behind the movie was great, but it could have been better'))
