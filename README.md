@@ -32,3 +32,22 @@ Sentiment analysis is basically the process of determining the attitude or the e
 **VADER** (Valence Aware Dictionary and sEntiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media. The Positive, Negative and Neutral scores represent the proportion of text that falls in these categories. This means our sentence was rated as 67% Positive, 33% Neutral and 0% Negative. Hence all these should add up to 1. The Compound score is a metric that calculates the sum of all the lexicon ratings which have been normalized between -1(most extreme negative) and +1 (most extreme positive). 
 
 #### Screenshots
+
+##### Tokenization
+
+![Screenshot](readme-resources/token.jpg)
+
+
+##### POS-Tags
+
+![Screenshot](readme-resources/pos.jpg)
+
+
+##### Entity Extraction
+
+![Screenshot](readme-resources/entity.jpg)
+
+
+##### Sentiment Analysis
+
+![Screenshot](readme-resources/sentiment.jpg)
