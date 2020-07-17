@@ -50,4 +50,4 @@ Sentiment analysis is basically the process of determining the attitude or the e
 
 ##### Sentiment Analysis
 
-![Screenshot](readme-resources/sentiment.jpg)
+
